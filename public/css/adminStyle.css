@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+input {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    word-wrap: break-word;
+}
+
+
+/* Pages */
+
+.pages {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.page {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* Login Page */
+
+.login.page,
+.error.page {
+    background-color: #000;
+}
+
+.form {
+    height: 100px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.login.page .form .usernameInput,
+.passwordInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 400px;
+}
+
+.title {
+    font-size: 200%;
+}
+
+.login.page .usernameInput,
+.passwordInput {
+    font-size: 200%;
+    letter-spacing: 3px;
+}
+
+.title,
+.login.page .usernameInput,
+.passwordInput {
+    color: #fff;
+    font-weight: 100;
+}
+
+
+/* Chat page */
+
+.container {
+    width: 85%;
+    height: 95%;
+    padding: 1em;
+    padding-left: 5em;
+    float: left;
+}
+
+.usersOnline {
+    width: 15%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid #000
+}
+
+.chat.page {
+    display: none;
+}
+
+.adminList {
+    padding: 0px;
+}
+
+.adminList li {
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* Font */
+
+.messages {
+    font-size: 150%;
+}
+
+.inputMessage {
+    font-size: 100%;
+}
+
+.log {
+    color: gray;
+    font-size: 70%;
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* Messages */
+
+.chatArea {
+    height: 55%;
+    width: 30%;
+    border: 1px solid #000;
+    padding: 0em 1em 1em 1em;
+    float: left;
+    overflow: hidden;
+}
+
+.chatHeader {
+    height: 9%;
+    margin: 0;
+    padding: 0.1em 0.1em 0.1em 0.3em;
+    margin-left: -1em;
+    margin-right: -1em;
+    border-bottom: 0.1em solid #000;
+}
+
+.messages {
+    height: 65%;
+    margin: 0;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    overflow: auto;
+}
+
+.username,
+.passwordInput {
+    font-weight: 700;
+    overflow: hidden;
+    padding-right: 15px;
+}
+
+.timestamp {
+    color: gray;
+    font-size: 70%;
+    margin: 5px;
+    text-align: right;
+}
+
+.typing {
+    height: 6%;
+    padding: 0 0.5em 0.2em 0.5em;
+}
+
+
+/* Input */
+
+.inputMessage {
+    border: 0.4em solid #000;
+    bottom: 0;
+    height: 20%;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+}
